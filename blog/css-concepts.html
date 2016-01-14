@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display: Inline vs Inline-Block</title>
+  </head>
+  
+  <body>
+    <header>
+      <tr>
+        <td><a href="#">Home</a></td>
+        <td><a href="#">About Me</a></td>
+        <td><a href="#">Contact</a></td>
+        <td><a href="#">Blog</a></td>
+        <td><a href="#">Resume</a></td>
+        <td><a href="#">Projects</a></td>
+      </tr>
+      
+      <img src="/cyvattes.github.io/imgs/Cyrus.jpg" alt="Cyrus Pic" />
+    </header>
+    <hr>
+    
+    <main>
+      <h1>Display: Inline vs Inline-Block</h1>
+      <h2>DBC Phase 0 - Week (3)</h2>
+      <h4>Jan 13, 2016</h4>
+      
+      <section>
+        <p>There are several ways in which CSS can change the way objects are displayed. Today I'll discuss two of them: the "display: inline" and "display: inline-block" commands. While similar, they can cause your page to do some strange things if you aren't careful.</p>
+        <p>First on our list is display:inline. What's important to remember is that displaying an object (or div) inline will cause it to lose its any previous status as a block. This can make objects stack on top of each other. This could be good (if you want headers to cover part of a background image, for example), but can interfere with some interactions if you aren't careful. What the command does is allow objects to appear on the same line as each other, letting you stack several objects horizontally on your page. As I said, though, it gets rid of the block surrounding the item, so they will start to collide if you aren't careful.</p>
+        <p>Display:inline-block, on the other hand, is a sort of hybrid between a block and the display:inline command. It will allow items to stack horizontally (like inline), but will retain the block designation of the object, keeping them from interacting or colliding with each other. This way, you can put images, blocks of text, or buttons next to each other without worrying about losing track of them.</p>
+      </section>
+      
+    </main>
+    
+    <hr>
+    <footer>
+      
+    </footer>
+    
+    <!--
+    - How was it to wireframe and create an HTML page with a pair?
+        Creating HTML with a pair was pretty simple, but our wireframing ideas started out being pretty different. We ended up deciding on a pretty simple layout that could be expanded upon later.
+    - Did you find wireframing to be helpful to your development process?
+        Wireframing made coding the page in html pretty straightforward, getting rid of any need to design and code at the same time.
+    - What did you and your pair decide made a good wireframe? 
+        We decided to stay simple, leaving links and pictures in their own section and having the body of the blog posts in their own discrete block in the center of the page.
+    - What new semantic elements did you learn about (if any)?
+        I didn't learn about any new elements in this challenge, although it gave me some practice with tables.
+    -->
+  
+    <img src="/cyvattes.github.io/imgs/wireframe-blogs.png" alt="Blog Wireframe" />
+  
+  </body>
+</html>
