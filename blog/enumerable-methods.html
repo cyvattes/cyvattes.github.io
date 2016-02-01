@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby Enumerable Methods</title>
+    <link type="text/css" rel="stylesheet" href="./../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="./../stylesheets/blog.css">
+  </head>
+  
+  <body>
+    <header>
+      <tr>
+        <td><a href="./../index.html">Home</a></td>
+        <td><a href="#">About Me</a></td>
+        <td><a href="./index.html">Blog</a></td>
+        <td><a href="#">Resume</a></td>
+        <td><a href="#">Projects</a></td>
+      </tr>
+      
+      
+    </header>
+    
+    
+    <main>
+      <aside>
+        <img src="./../imgs/Cyrus.jpg" alt="Cyrus Pic" />
+      </aside>
+
+      <section>
+        <h1>Ruby Enumerable Methods: “.map”</h1>
+        <h2>DBC Phase 0 - Week 5</h2>
+        <h3>Jan 31, 2016</h3>
+        <p>Say you want to take a set of data in ruby and iterate over each part to perform a certain task. There are several ways to do this, but today I’m going to discuss two of them: .map and .each. Now, I use .each all the time, and it’s one of my favorite (and easiest to use) iterative functions in Ruby. The enumerative .map method is almost identical to .each, with the exception that it creates a new array with the iterated items.</p>
+        <p>This is clearly stated in the Ruby docs, which state that:</p>
+        <p>Map invokes the given block once for each element of self. Creates a new array containing the values returned by the block. If no block is given, an Enumerator is returned instead.</p>
+        <p>An enumerator is simply an iteration that can be applied to an object. For example, if you call the .map method on an array without passing a command, it will simply iterate over each element.</p>
+        <p>A basic example of this method is as follows:</p>
+        <p><pre><code>
+          arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          new_array = arr.map { |num| num.to_s }
+          
+          => [“1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “10”]
+        </code></pre></p>
+        <p>The difference between the above example and the .each iterator is that .map will create a new array while .each will only iterate over each object within the array.</p>
+      </section>
+      
+    </main>
+    
+    <footer>
+      <p>Footer</p>
+    </footer>
+   
+  </body>
+</html>
