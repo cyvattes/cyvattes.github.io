@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby Enumerable Methods</title>
+    <link type="text/css" rel="stylesheet" href="./../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="./../stylesheets/blog.css">
+  </head>
+  
+  <body>
+    <header>
+      <tr>
+        <td><a href="./../index.html">Home</a></td>
+        <td><a href="./../about-me.html">About Me</a></td>
+        <td><a href="./index.html">Blog</a></td>
+        <td><a href="#">Resume</a></td>
+        <td><a href="#">Projects</a></td>
+      </tr>
+      
+      
+    </header>
+    
+    
+    <main>
+      <aside>
+        <img src="./../imgs/Cyrus.jpg" alt="Cyrus Pic" />
+      </aside>
+
+      <section>
+        <h1>Ruby Classes</h1>
+        <h2>DBC Phase 0 - Week 6</h2>
+        <h3>Feb 7, 2016</h3>
+        <p>
+          Today we're going to be talking about classes in Ruby, what they are, how to use them, and some of the benefits to using them. Along the way, I'll also touch on instance variables, and the difference between an instance variable and a local variable.
+        </p>
+        <p>
+          A class in Ruby is sort of like a collection of similar methods that you'd like to run. For example, you could have a calculator class that would hold methods to add, subtract, divide, and multiply different numbers together. I'll create a simple class below, and then we'll pick apart the pieces and explain each one.
+        </p>
+
+        <p><pre><code>
+          class SimpleCalc
+            def initialize(num1, num2)
+              @num1 = num1
+              @num2 = num2
+            end
+            
+            def add
+              sum = @num1 + @num2
+              puts "Sum is #{sum}"
+            end
+            
+            def subtract
+              difference = @num1 - @num2
+              puts "Difference is #{difference}"
+            end
+            
+            def multiply
+              product = @num1 * @num2
+              puts "Product is #{product}"
+            end
+            
+            def divide
+              quotient = @num1 / @num2
+              remainder = @num1 % @num2
+              puts "Quotient is #{quotient} with a remainder of #{remainder}"
+            end
+          end
+          
+          some_math = SimpleCalc.new(10, 3)
+          some_math.add
+          some_math.subtract
+          some_math.multiply
+          some_math.divide
+          
+          
+          -----------------------------------
+          
+          => "Sum is 13"
+          => "Difference is 7"
+          => "Product is 30"
+          => "Quotient is 3 with a remainder of 1"
+        </code></pre></p>
+        
+        <p>
+          First, we create a class called SimpleCalc. We initialize the class (the first defined method) with 2 arguments, which are passed in. Immediately below this, we create two instance variables and set them equal to the argument values.
+        </p>
+        <p>
+          An instance variable (here named @num1 and @num2) are variables that operate within a class, and can be passed between the methods of that class. They exist only within the confines of the class, and remain as long as the class exists. They are differentiated from local variables (sum, difference, product, quotient, and remainder), which only operate inside their specific method, and cannot be called by other methods.
+        </p>
+        <p>
+          The next thing we've done in this aboce example is to create 4 distinct methods (called add, subtract, multiply, and divide). Since each of these methods have been passed the instance variables @num1 and @num2 and pushed them into their own local variable, these methods can operate without changing the initial variables. If we wanted, we could get rid of the "sum" variable and replace it with @num1 += @num2. This would overwrite the value of @num1, and each other method would then use that new variable in their blocks.
+        </p>
+        <p>
+          Finally, we call the class and methods at the bottom. Keep in mind the notation for calling a class. we set a variable equal to SimpleCalc.new(10, 3), which creates a unique instance of the class and passes in those numbers as arguments. To use the operations within our new class, we use some_math.add (or whichever method you want to call). At the bottom, we see what the output of each method would be.
+        </p>
+
+      </section>
+      
+    </main>
+    
+   
+  </body>
+</html>
