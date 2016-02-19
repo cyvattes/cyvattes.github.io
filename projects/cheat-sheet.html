@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phase 0 Cheat Sheet</title>
+    <link type="text/css" rel="stylesheet" href="./../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="./../stylesheets/blog.css">
+  </head>
+  
+  <body>
+    <header>
+      <tr>
+        <td><a href="./../index.html">Home</a></td>
+        <td><a href="./../about-me.html">About Me</a></td>
+        <td><a href="./../index.html">Blog</a></td>
+        <td><a href="#">Resume</a></td>
+        <td><a href="./projects">Projects</a></td>
+      </tr>
+      
+      
+    </header>
+    
+    
+    <main>
+      <aside>
+        <img src="./../imgs/Cyrus.jpg" alt="Cyrus Pic" />
+      </aside>
+
+      <section>
+        <h1>Cheat Sheet</h1>
+        <h3>Ruby Basics</h3>
+        <img src="./../imgs/rubyclass.jpg" alt="Ruby Data Type Hierarchy" />
+        <p><pre><code>
+          var_name = "Cyrus"   #Here is a variable containing a string
+          var_num = 26   #This one holds an integer
+          var_array = ["ruby", "javascript", "sql"]  # and this one holds an array
+          my_hash = Hash.new   #Here, we create a new hash using the HASH class and the .new method
+          
+          my_hash = {    #On these few lines we create a hash with symbols for keys
+            name: "Cyrus"
+            age: 26
+            fav_food: "sauerbraten"
+            fav_sport: "fencing"
+          }
+          
+          def func_name_here(param) #this is how we define a method
+            new_arr = []            #making a new local variable (array)
+            param.each do |thing_to_do|   #This line iterates over param
+              new_arr.push(thing_to_do)   #.push items to the array
+              puts "#{thing_to_do} was added to the array."    #This shows how to print variables inline to text
+            end
+            p new_arr     #Another way to print to console, this one also returns the value
+          end
+          
+          =begin
+          Last, but not least, this is how you comment out multiple lines
+          =end
+        </code></pre></p>
+        
+        
+        <h3>JavaScript Basics</h3>
+        <p><pre><code>
+          function newFunc(param1, param2){        //there are 2 ways of defining functions
+          
+          };
+          
+          var newFunc = function(param1, param2){  //Here's the second
+          
+          };
+          
+          for (var i = 1; i <= 10; i++){    //This is how you call loops: set a counter (don't forget the var), set a condition, then increase, decrease, or whatever
+            if (i % 2 === 0){              //If loops need to be wrapped in parenthesis and curly braces
+              console.log(i);              //This is how you print to console
+            }
+            else {
+              console.log("odd");
+            }
+          };    //Don't forget semicolons at the end of phrases and functions
+          
+          /*
+          And this is how you comment multiple lines
+          */
+          
+        </code></pre></p>
+        <p>
+          
+        </p>
+        
+        
+        
+      </section>
+      
+    </main>
+   
+   
+  </body>
+</html>
