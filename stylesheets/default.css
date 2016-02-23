@@ -15,7 +15,9 @@ h2 {
 }
 
 header section {
-  text-align: center;
+  width: 30%;
+  margin-left: 40%;
+  text-align: left;
 }
 
 header nav {
