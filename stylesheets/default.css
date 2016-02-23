@@ -81,6 +81,13 @@ footer {
 
 main h3 {
   background-color: #D4D4D4;
+  margin: 0px 0px 0px 0px;
+}
+
+main h4 {
+  background-color: #D4D4D4;
+  margin: 0px 0px 0px 0px;
+  font-size: 0.8em;
 }
 
 main p {
@@ -138,4 +145,13 @@ main li {
 div p {
   background-color: #EBEBEB;
   margin-bottom: 0em;
+}
+
+code {
+  background-color: #999999;
+}
+
+section pre {
+  background-color: #999999;
+  text-align: left;
 }
